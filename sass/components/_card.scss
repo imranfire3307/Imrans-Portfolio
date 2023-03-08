@@ -1,0 +1,58 @@
+.card {
+  height: 50rem;
+  width: 100%;
+  transition: all .2s;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black-2, .15);
+  background-color: $color-black-1;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-light, .25);
+    transform: scale(1.07);
+
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right,
+              rgba($color-primary-light, 1),
+              rgba($color-primary-dark, 1));
+    }
+
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right,
+              rgba($color-primary-light, 1),
+              rgba($color-primary-dark, 1));
+    }
+
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right,
+              rgba($color-primary-light, 1),
+              rgba($color-primary-dark, 1));
+    }
+  }
+
+  //backface-visibility: hidden;
+
+  &__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-image: url("../img/imran-image.jpg");
+    background-position: 100% 68%;
+    border-radius: 3rem;
+
+    @include respond(phone) {
+      height: 80%;
+      margin: 0 2rem;
+    }
+  }
+
+  &__text {
+    color: $color-white-1;
+    @include respond(phone) {
+      margin: 0 2rem;
+      text-align: center;
+    }
+  }
+}
+
+

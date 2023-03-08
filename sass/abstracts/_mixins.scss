@@ -1,0 +1,39 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Media Queries
+/*
+  Media Queries
+  0-700px: Phone
+  700px-1400px: Tablet
+  1400px+: Desktop
+
+  breakpoint argument choices:
+    - phone
+    - tablet
+    - desktop
+
+    also 1em = 16px
+ */
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 43.75em) {@content}; // 700px
+  }
+
+  @if $breakpoint == tablet {
+    @media (max-width: 87.5em) {@content}; // 1400px
+  }
+}

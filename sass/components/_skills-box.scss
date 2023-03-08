@@ -1,0 +1,58 @@
+.skills-box {
+  background-color: transparent;
+  padding: 10rem 0;
+  position: relative;
+  transition: all .2s;
+  margin: 2rem 0;
+  color: white;
+
+  &:hover {
+    transform: scale(1.075);
+
+    .skills-box__icon {
+      height: 22rem;
+    }
+
+    .skills-box__text {
+      transition: all .3s;
+      font-size: 3.5rem;
+      color: $color-primary-2;
+      font-weight: 500;
+      background-color: white;
+      padding: 0 2rem;
+      border-radius: 2rem;
+    }
+  }
+
+  &__icon {
+    height: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+
+    @include respond(phone) {
+      height: 10rem;
+    }
+
+    @include respond(tablet) {
+      height: 12rem;
+    }
+  }
+
+  &__text {
+    margin-top: 2rem;
+    color: rgba($color-white-2, .7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 110%);
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: .2rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+
+.header {
+  height: 96vh;
+  background-image: url("../img/background-cover-2.jpg");
+  background-size: cover;
+  padding: 0;
+  z-index: 0;
+
+  @include respond(phone) {
+    height: 100vh;
+  }
+
+  &__text {
+    @include center();
+    text-align: center;
+
+  }
+}
+

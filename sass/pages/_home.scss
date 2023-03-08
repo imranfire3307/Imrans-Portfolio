@@ -1,0 +1,46 @@
+.paragraph {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 4px;
+  background-color: darkgrey;
+  text-align: center;
+}
+
+.section {
+  color: #ffffff;
+  height: 75vh;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.skills {
+  display: block;
+  padding: 20rem 0;
+  background-color: rgba($color-black-2, 0.2);
+  background-image: linear-gradient(to right,
+          rgba($color-primary-light, 0.5),
+          rgba($color-primary-dark, 0.5)),
+  url(../img/skills-cover.jpg);
+  background-size: cover;
+  margin-top: 30rem;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.about-us {
+  padding: 10rem 0 0 0;
+}
+
+.projects {
+  padding: 15rem 0 60rem 0;
+}
