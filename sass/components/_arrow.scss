@@ -5,6 +5,10 @@
   transform: translateY(80rem);
   opacity: 50%;
 
+  @include respond(phone) {
+    transform: translateY(55rem);
+  }
+
   &::after{
     content:'';
     width:4rem;

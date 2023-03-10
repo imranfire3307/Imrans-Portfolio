@@ -11,6 +11,11 @@
 
     .skills-box__icon {
       height: 22rem;
+
+      @include respond(phone) {
+        height: 13rem;
+      }
+
     }
 
     .skills-box__text {
@@ -21,6 +26,11 @@
       background-color: white;
       padding: 0 2rem;
       border-radius: 2rem;
+
+      @include respond(phone) {
+        font-size: 2.5rem;
+        padding: 0 1.5rem;
+      }
     }
   }
 

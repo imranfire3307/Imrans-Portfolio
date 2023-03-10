@@ -11,22 +11,9 @@
     box-shadow: 0 1.5rem 4rem rgba($color-primary-light, .25);
     transform: scale(1.07);
 
-    .card__heading-span--1 {
-      background-image: linear-gradient(to right,
-              rgba($color-primary-light, 1),
-              rgba($color-primary-dark, 1));
-    }
-
-    .card__heading-span--2 {
-      background-image: linear-gradient(to right,
-              rgba($color-primary-light, 1),
-              rgba($color-primary-dark, 1));
-    }
-
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right,
-              rgba($color-primary-light, 1),
-              rgba($color-primary-dark, 1));
+    @include respond(phone) {
+      transform: scale(1);
+      box-shadow: 0 0 0 ;
     }
   }
 

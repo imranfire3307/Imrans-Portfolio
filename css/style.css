@@ -148,6 +148,9 @@ body {
   text-align: center;
   transform: translateY(80rem);
   opacity: 50%; }
+  @media (max-width: 43.75em) {
+    .down-arrow {
+      transform: translateY(55rem); } }
   .down-arrow::after {
     content: '';
     width: 4rem;
@@ -184,12 +187,10 @@ body {
   .card:hover {
     box-shadow: 0 1.5rem 4rem rgba(207, 45, 93, 0.25);
     transform: scale(1.07); }
-    .card:hover .card__heading-span--1 {
-      background-image: linear-gradient(to right, #cf2d5d, #89062d); }
-    .card:hover .card__heading-span--2 {
-      background-image: linear-gradient(to right, #cf2d5d, #89062d); }
-    .card:hover .card__heading-span--3 {
-      background-image: linear-gradient(to right, #cf2d5d, #89062d); }
+    @media (max-width: 43.75em) {
+      .card:hover {
+        transform: scale(1);
+        box-shadow: 0 0 0; } }
   .card__image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -255,6 +256,9 @@ body {
     transform: scale(1.075); }
     .skills-box:hover .skills-box__icon {
       height: 22rem; }
+      @media (max-width: 43.75em) {
+        .skills-box:hover .skills-box__icon {
+          height: 13rem; } }
     .skills-box:hover .skills-box__text {
       transition: all .3s;
       font-size: 3.5rem;
@@ -263,6 +267,10 @@ body {
       background-color: white;
       padding: 0 2rem;
       border-radius: 2rem; }
+      @media (max-width: 43.75em) {
+        .skills-box:hover .skills-box__text {
+          font-size: 2.5rem;
+          padding: 0 1.5rem; } }
   .skills-box__icon {
     height: 20rem;
     position: absolute;
